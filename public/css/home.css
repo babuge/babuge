@@ -1,0 +1,417 @@
+.allCont{
+    position: fixed;
+    width:100%;
+    background:url('http://bbg.babuge.com/images/body.jpg') no-repeat center;
+    background-size: auto 100%;
+    /* background-color: #111; */
+    top:0;
+    left:0;
+    z-index: -1;
+}
+.coutH{
+    padding:0 40px;
+    width:100%;
+}
+/*头部*/
+.header{
+    position:fixed;
+    width:100%;
+    height:68px;
+    top:0;
+    right:0;
+    left:0;
+    padding:0 40px;
+    z-index: 888;
+    background-color: rgba(0,13,48,0.9);
+    color:#fff;
+}
+/*logo*/
+.logo_user{
+    width:100%;
+    height:54px;
+    margin:7px auto;
+}
+.logo_user .logo{
+    width:200px;
+    height:100%;
+    overflow-y:hidden;
+}
+.logo_user .logo img{
+    width:100%;
+    max-height:100%;
+}
+.logo_user .user{
+    width: -moz-calc(100% - 200px);
+    width: -webkit-calc(100% - 200px);
+    width: calc(100% - 200px);
+    height:100%;
+    text-align: center;
+    
+}
+.goto_reg,.goto_login{
+    padding:0 10px;
+    height:100%;
+    line-height: 54px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.is_user{
+    padding:0 3px 0 10px;
+    height:100%;
+    line-height: 54px;
+    font-size: 1rem;
+    cursor:pointer;
+}
+.user_item{
+    position: relative;
+    min-width:1px;
+    height:0px;
+    z-index: 888;
+}
+.user_item .item_box{
+    position: absolute;
+    top:0;
+    right:0;
+    width:200px;
+    height:auto;
+    background-color:rgba(0,13,48,1);
+    z-index: 888;
+}
+.user_opt{
+    width:100%;
+    height:42px;
+    line-height: 42px;
+    border-bottom:1px solid #55699f;
+    cursor:pointer;
+}
+.user_opt a{
+    display: block;
+    width:100%;
+    height:100%;
+    text-decoration:none;
+    color:#fff;
+    text-align: center;
+}
+/*按钮===*/
+/*drop_down 下箭头*/
+.drop_down{
+  width:30px;
+  height:100%;
+  text-align: left;
+  float: left;
+  padding-left:5px;
+  background:url('../icon/arrows_down_red.png') no-repeat center; 
+  background-size: 80% ;
+  cursor:pointer;
+}
+/*drop_down 下箭头*/
+.drop_up{
+  width:30px;
+  height:100%;
+  padding-left:5px;
+  float: left;
+  background:url('../icon/arrows_up_red.png') no-repeat center; 
+  background-size: 80% ;
+  cursor:pointer;  
+}
+/*ios click兼容*/
+.logo_user .span,.user_item .user_opt{
+    cursor:pointer;
+}
+/*侧边栏  main_nav（right_nav）*/
+nav.main_nav{
+    width:150px;
+    margin-top:68px;
+    position: fixed;
+    top:0;
+    right:40px;
+    z-index: 880;
+    background-color:#000d30;
+    padding-left:3px;
+    padding-right: 3px;
+}
+nav .scroll_bar{
+    height:100%;
+    width:100%;
+    /* overflow: auto;     */
+    /*auto：超出显示滚动条、、scroll：总是显示滚动条*/
+    color: #fff;
+}
+.navBox{
+    position:relative;/*for scrollfollw*/
+    width:100%;
+    height:auto;
+    padding-bottom: 4px;
+    border-bottom:1px solid #55699f; 
+    background-color: #000d30;
+    padding-top:1px;
+}
+.navBox li.navBar{
+    width:100%;
+    height:50px;
+    line-height: 50px;
+}
+.navBox li.navBar a{
+    display: block;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    text-align: left;
+    text-indent: 10px;
+    color:#666;
+    letter-spacing: 2px;
+    margin-top:2px;
+}
+/* nav defualt皮肤样式 */
+.navBox li.defualt{
+    /* background:url('../icon/darkblue_btn.png') no-repeat center;
+    background-size: 100% 100%; */
+  background: -webkit-linear-gradient(#0d1b40,#a6bcf8,#0d1b40,#0d1b40); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#0d1b40,#a6bcf8,#0d1b40,#0d1b40); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#0d1b40,#a6bcf8,#0d1b40,#0d1b40); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#0d1b40,#a6bcf8,#0d1b40,#0d1b40); /* 标准的语法 */
+} 
+.navBox li.defualt.active{
+    background:url('../icon/darkblue_btn_active.png') no-repeat center;
+    background-size: 100% 100%;
+}
+.navBox li.defualt a{
+    border:.05rem solid #94a3cb;
+    border-radius: .2rem;
+    color:#fff;
+}
+/*====content_home 内容===*/
+/*subCont====*/
+.subCont{
+    width:100%;
+    height:100%;
+    padding-top:68px;
+}
+.subContLeft{
+    width: -moz-calc(100% - 150px);
+    width: -webkit-calc(100% - 150px);    
+    width:calc(100%-150px);
+    height:100%;
+    border:1px solid #f00;
+}
+.subContRight{
+    width:150px;
+    height:100%;
+    border:1px solid #f00;
+}
+/*banner*/
+.bannerBar{
+    width:100%;
+    padding-bottom:25px;
+    border-bottom:1px solid green;
+}
+.banner{
+    height:360px;
+    overflow: hidden;
+    border: 1px solid red;
+}
+.bannerList{
+    height:360px;
+    overflow: hidden;
+    border: 1px solid red;
+    padding:10px 25px;
+}
+.ban_tit{
+    width:100%;
+    height: 100%;
+    padding-right:0.8rem;
+    background-color:rgba(0,60,200,0.3);
+    border-radius: 0 0 20px 0;
+    padding-top:1px;    
+}
+/* banner default皮肤样式 */
+.ban_tit.defualt .list{
+    position: relative;
+    width:100%;
+    height:45px;
+    color:#ccc;
+    line-height: 45px;
+    text-indent: 28px;
+    cursor:pointer;
+    -moz-overflow:hidden;
+    -ms-overflow: hidden;
+    -webkit-overflow: hidden;
+    overflow: hidden;
+}
+.ban_tit.defualt .list a{
+    display: block;
+    width:100%;
+    height:100%;
+    color:#ccc;
+    text-decoration: none;
+}
+.ban_tit.defualt .list a.active{
+    color:#dedede;
+}
+.ban_tit.defualt .list a {
+    position: relative;
+    padding-top:1px;
+}
+.ban_tit.defualt .frist{
+    margin-top:20px;
+}
+.ban_tit.defualt .active{
+    color:#dedede;
+}
+.ban_tit.defualt .list:hover{
+    color:#dedede;
+}
+.ban_tit.defualt .list:hover::before{
+    content: "";
+    position:absolute;
+    width:20px;
+    height:20px;
+    top:11px;
+    left:5px;
+    border-radius: 8px;
+    background:url("../icon/ban_active_icon.png") no-repeat center;
+    background-size:100% 100%;
+}
+.ban_tit.defualt .active::before{
+    content: "";
+    position:absolute;
+    width:20px;
+    height:20px;
+    top:11px;
+    left:5px;
+    border-radius: 8px;
+    background:url("../icon/ban_active_icon.png") no-repeat center;
+    background-size:100% 100%;
+}
+/*ad 广告*/
+.ad_title{
+    width:100%;
+    height:32px;
+    margin-bottom:3px;
+}
+.ad_title .adTitBar{
+    width:300px;
+    height:32px;
+    
+}
+.adTitCont{
+    width:268px;
+    height:32px;
+    line-height:32px;
+    background:url("../icon/ad_tit_icon.png") no-repeat center;
+    background-size:100% 100%;
+    color:#fff;
+    text-indent:24px;    
+    font-size:1.2rem;
+}
+.adTitMore{
+    width:32px;
+    height:32px;
+    background:url("../icon/more_blue.png") no-repeat center bottom 4px;
+    background-size:100% auto;
+    cursor: pointer;
+}
+.ad{
+    width:100%;
+    overflow: hidden;
+    padding-top:1px;
+    margin-bottom:25px;
+}
+.ad div.w_3{
+    padding:0 4px;
+    overflow: hidden;
+}
+.ad img{
+    min-width:100%;
+    min-height:100px;
+    max-height: 100px;
+}
+/*最佳分享*/
+.shareBar{
+    width:100%;
+    padding-top:1px;
+    margin-bottom:25px;
+}
+.shareTitle{
+    width:100%;
+    height:32px;
+    margin-bottom:4px;
+}
+.shareUl{
+    width:100%;
+    height:260px;
+}
+.shareCont{
+    padding:0 4px;
+    height:260px;
+}
+.shareImg{
+    position: relative;
+    width:100%;
+    height:210px;
+}
+.shareImg:hover{
+    z-index: 1;
+}
+.shareImg img{
+    width:100%;
+    min-height:100%;
+}
+.shareImg:hover img{
+    transform:scale(1.5,1.5);
+    transition:.3s transform;
+}
+.shareImg img:hover{
+    transform:scale(1.4);
+}
+.shareCont .subTitBar{
+    width:100%;
+    height:50px;
+    border-bottom:1px solid #55699f;
+}
+.shareCont .tit{
+    width:100%;
+    height:25px;
+    background-color: #000d30;
+    line-height: 25px;
+    text-align: left;
+    color:#fff;
+    font-size:1rem;
+    -o-text-overflow: clip;
+    -ms-text-overflow: clip;
+    text-overflow: clip;
+    white-space:nowrap;
+    overflow:hidden;
+    padding:0 5px;    
+}
+.shareCont .subtit{
+    width:100%;
+    height:25px;
+    background-color: #000d30;
+    line-height: 25px;
+    color:#fff;
+    font-size:1rem;
+    text-align: left;
+    padding:0 5px;
+}
+.shareCont .author{
+    height: 25px;
+    line-height: 25px;
+    -o-text-overflow: clip;
+    -ms-text-overflow: clip;
+    text-overflow: clip;
+    white-space:nowrap;
+    overflow:hidden;
+}
+.shareCont .time{
+    height:25px;
+    line-height: 25px;
+    font-size:0.8rem;
+    text-align: right;
+    text-indent: 10px;
+    -o-text-overflow: clip;
+    -ms-text-overflow: clip;
+    text-overflow: clip;
+    white-space:nowrap;
+    overflow:hidden;
+}

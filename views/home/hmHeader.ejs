@@ -1,0 +1,23 @@
+      <header class="header">
+        <ul class="logo_user cle">
+          <li class="logo lt"><a href="#" alt="babuge的logo"><img src="images/logo.png" alt="八部阁logo"/></a></li>
+          <li class="user rt cle">
+            <% if(showuser=='false'){ %>
+            <div class="goto_reg rt" id="reg">注册</div><div class="goto_login rt" id="log">登录</div>
+            <% }else{ %>
+            <!--透明蒙版-->
+            <div class="pb_a0_mask" hidden id="mask_user"></div>
+            <div class="is_user rt cle"><span class="lt">八部阁</span>&nbsp;<span class="drop_down" id="user"></span>
+            <div class="user_item">
+                <ul class="item_box" hidden>
+                    <li class="user_opt"><a href="test">test</a></li>
+                    <li class="user_opt">2</li>
+                    <li class="user_opt">3</li>
+                    <li class="user_opt">注销</li>
+                </ul>
+            </div>
+            </div>
+            <% }%>
+          </li>
+        </ul>
+      </header>

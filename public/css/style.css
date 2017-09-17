@@ -1,0 +1,83 @@
+/*style为公共样式 全局样式*/
+*{box-sizing: border-box;}
+body{
+  color:"#333";font-family:"微软雅黑";font-size:1.2rem;
+}
+body,img,ul,li,ol,dt,dl,dd{
+  margin:0;
+  padding:0;
+}
+ul,dt{
+  list-style: none;
+}
+
+/*float-left&float-right&clear-both*/
+.lt{
+  float:left;
+}
+.rt{
+  float:right;
+}
+.cle:after{
+  content:"";
+  display: block;
+  clear:both;
+}
+/*grade 网格系统 1/12 */
+.w_1{
+  width:8.4%;
+  float:left;
+}
+.w_11{
+  width:91.6%;
+  float:left;
+}
+.w_2{
+  width:16.8%;
+  float:left;
+}
+.w_10{
+  width:83.2%;
+  float:left;
+}
+.w_3{
+  width:25%;
+  float:left;
+}
+.w_9{
+  width:75%;
+  float:left;
+}
+.w_4{
+  width:33.4%;
+  float:left;
+}
+.w_8{
+  width:76.6%;
+  float:left;
+}
+.w_5{
+  width:41.6%;
+  float:left;
+}
+.w_7{
+  width:58.4%;
+  float:left;
+}
+.w_6{
+  width:50%;
+  float:left;
+}
+/*公共透明蒙版--*/
+.pb_a0_mask{
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index: 887;
+  background-color: rgba(0,0,0,0);
+}
+.overhide{
+  overflow: hidden;
+}
